@@ -6,10 +6,6 @@ var express = require('express');
    res.send('Welcome to the ' + req.params.club + '!');
  });
 
- app.get('/:help/', function (req, res)) {
-  res.send('Ctrl + C = stop running' + req.params.club + '!');
- });
-
  var server = app.listen(process.env.PORT, function () {
    var host = server.address().address;
    var port = server.address().port;
